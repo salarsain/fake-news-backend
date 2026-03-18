@@ -1,0 +1,21 @@
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+pydantic==2.7.1
+
+# ML
+torch>=2.2.0
+transformers>=4.40.0
+datasets>=2.19.0
+scikit-learn>=1.4.2
+numpy>=1.26.4
+pandas>=2.2.2
+accelerate>=0.30.0
+
+# Scraping
+feedparser==6.0.11
+requests==2.31.0
+beautifulsoup4==4.12.3
+lxml==5.2.1
+
+# Utils
+python-multipart==0.0.9
