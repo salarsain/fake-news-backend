@@ -21,12 +21,16 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "https://fake-news-detector.pages.dev",  # Cloudflare URL
+        "https://fake-news-detector.salarsain2456.workers.dev",  # Workers URL
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 # ── Startup ──────────────────────────────────────────────────
 @app.on_event("startup")
 def startup_event():
