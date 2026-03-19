@@ -24,8 +24,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://localhost:3000",
-        "https://fake-news-detector.pages.dev",  # Cloudflare URL
-        "https://fake-news-detector.salarsain2456.workers.dev",  # Workers URL
+        "https://fake-news-detector-393.pages.dev",
     ],
     allow_credentials=True,
     allow_methods=["*"],
